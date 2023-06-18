@@ -8,12 +8,12 @@
 
   ### 1.2.1)  Дублирование
 
-  - шрифт ![Alt text](image.png)
-  - скрипт ![Alt text](image-1.png)
-  - скрипт code.js ![Alt text](image-2.png)
-  - пост запрос с одним и тем же payload ![Alt text](image-4.png)
-  - фавиконка ![Alt text](image-5.png)
-  - иконка рамблер ![Alt text](image-6.png)
+  - шрифт ![Alt text](temp/image.png)
+  - скрипт ![Alt text](temp/image-1.png)
+  - скрипт code.js ![Alt text](temp/image-2.png)
+  - пост запрос с одним и тем же payload ![Alt text](temp/image-4.png)
+  - фавиконка ![Alt text](temp/image-5.png)
+  - иконка рамблер ![Alt text](temp/image-6.png)
 
   ### 1.2.2) лишний размер ресурса
 
@@ -21,17 +21,17 @@
   - не минимизирован css файл https://www.gd.ru/assets/f8e4500d/assets/frontend/css/layouts.other.css?cache=5a6fa72bdfc8007242bf089feb2ff92203bc8762 (и не используется)
   - оставлены комментарии для документации js-кода
 
-  ![Alt text](image-20.png)
+  ![Alt text](temp/image-20.png)
 
   ### 1.2.3) медленно загружающиеся ресурсы
   несторонних и медленных ресурсов, кроме основного html, не выявляется
-  ![Alt text](image-7.png)
+  ![Alt text](temp/image-7.png)
 
   ### 1.2.4) ресурсы, блокирующие загрузку
 
   скрипт содержит код для запуска загрузки других скриптов
 
-  ![Alt text](image-19.png)
+  ![Alt text](temp/image-19.png)
 
   ```
   $(document).ready(function () {
@@ -65,7 +65,7 @@
 
 ### 2.3) определить, на каком DOM-элементе происходит LCP
 картинка
-![Alt text](image-9.png)
+![Alt text](temp/image-9.png)
 
 ### 2.4) измерить, сколько времени в миллисекундах тратится на разные этапы обработки документа (Loading, Scripting, Rendering, Painting)
 - Loading **57ms**
@@ -73,22 +73,22 @@
 - Rendering **688ms**
 - Painting **57ms**
 
-![Alt text](image-10.png)
+![Alt text](temp/image-10.png)
 
 # Coverage
 
 ### 3.1) сохранить скриншот вкладки после загрузки страницы
 
-![Alt text](image-11.png)
+![Alt text](temp/image-11.png)
 
 ### 3.2) измерить в килобайтах объём неиспользованного CSS в ходе загрузки страницы
 
 приблизительно 566 kB из 591 kB + 265 kB (css + html) не используются
 
-![Alt text](image-16.png)
+![Alt text](temp/image-16.png)
 
 ### 3.3) измерить в килобайтах объём неиспользованного JS в ходе загрузки страницы
 
 приблизительно 2.3 MB из 3.6MB + 265 kB (css + html) не используются
 
-![Alt text](image-18.png)
+![Alt text](temp/image-18.png)
